@@ -5,5 +5,4 @@ public class SteamedBunFactory extends Factory {
     public MachineApi newMachine() {
         return new SteamedBunMachine();
     }
-
 }

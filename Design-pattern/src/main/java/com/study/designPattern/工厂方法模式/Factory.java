@@ -13,5 +13,4 @@ public abstract class Factory {
         MachineApi machine = newMachine();
         machine.process(material);
     }
-
 }
