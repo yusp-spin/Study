@@ -26,20 +26,7 @@
 
 
 
-##### 三、设计模式
-
-1. [设计模式—创建型模式](https://github.com/yusp-spin/Study/blob/main/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E2%80%94%E5%88%9B%E5%BB%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F.md)
-
-
-
-##### 四、Reids
-
-1. [一文搞透Redis](https://github.com/yusp-spin/Study/blob/main/%E4%B8%80%E6%96%87%E6%90%9E%E9%80%8FRedis.md)
-2. [关于redisCluster](https://github.com/yusp-spin/Study/blob/main/%E5%85%B3%E4%BA%8EredisCluster.md)
-
-
-
-##### 五、算法相关
+##### 三、算法相关
 
 1. [手撕线程池](https://github.com/yusp-spin/Study/blob/main/%E6%89%8B%E6%92%95%E7%BA%BF%E7%A8%8B%E6%B1%A0.md)
 
@@ -57,11 +44,25 @@
 
    
 
+##### 四、设计模式
+
+1. [设计模式—创建型模式](https://github.com/yusp-spin/Study/blob/main/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E2%80%94%E5%88%9B%E5%BB%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F.md)
+
+
+
+##### 五、Reids
+
+1. [一文搞透Redis](https://github.com/yusp-spin/Study/blob/main/%E4%B8%80%E6%96%87%E6%90%9E%E9%80%8FRedis.md)
+2. [关于redisCluster](https://github.com/yusp-spin/Study/blob/main/%E5%85%B3%E4%BA%8EredisCluster.md)
+
+
+
 ##### 六、MQ
 
 1. [Kafka入门](https://github.com/yusp-spin/Study/blob/main/Kafka%E5%85%A5%E9%97%A8.md)
 2. [Kafka介绍（二）](https://github.com/yusp-spin/Study/blob/main/Kafka%E4%BB%8B%E7%BB%8D%EF%BC%88%E4%BA%8C%EF%BC%89.md)
 3. [RocketMQ实现分布式事物原理](https://github.com/yusp-spin/Study/blob/main/RocketMQ%E5%AE%9E%E7%8E%B0%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1.md)
+
 
 
 ##### 七、Netty
