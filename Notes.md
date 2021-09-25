@@ -98,7 +98,7 @@
 4. [了解ConcurrentHashMap](https://github.com/yusp-spin/Study/blob/main/%E4%BA%86%E8%A7%A3ConcurrentHashMap.md)
 5. [Git常用命令](https://github.com/yusp-spin/Study/blob/main/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.md)
 6. [AQS入门](https://github.com/yusp-spin/Study/blob/main/AQS%E5%85%A5%E9%97%A8.md)
-
+7. [Nginx常问的问题](https://github.com/yusp-spin/Study/blob/main/Nginx%E5%AD%A6%E4%B9%A0.md)
 
 
 
