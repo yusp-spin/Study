@@ -57,11 +57,11 @@
 
    
 
-##### 六、Kafka
+##### 六、MQ
 
 1. [Kafka入门](https://github.com/yusp-spin/Study/blob/main/Kafka%E5%85%A5%E9%97%A8.md)
 2. [Kafka介绍（二）](https://github.com/yusp-spin/Study/blob/main/Kafka%E4%BB%8B%E7%BB%8D%EF%BC%88%E4%BA%8C%EF%BC%89.md)
-
+3. [RocketMQ实现分布式事物原理](https://github.com/yusp-spin/Study/blob/main/RocketMQ%E5%AE%9E%E7%8E%B0%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1.md)
 
 
 ##### 七、Netty
