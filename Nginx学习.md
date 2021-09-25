@@ -5,11 +5,11 @@ categories: Nginx
 tags: Nginx
 ---
 
-1. nginx的负载均衡算法有哪些？
+##### 1. nginx的负载均衡算法有哪些？
 
 Nginx的upstream模块支持6种方式的负载均衡策略（算法）：轮询（默认方式）、weight（权重方式）、ip_hash（依据ip分配方式）、least_conn（最少连接方式）、fair（第三方提供的响应时间方式）、url_hash（第三方通过的依据URL分配方式）。
 
-2. ngxin的作用
+##### 2. ngxin的作用
 
 web 服务.
 
@@ -21,7 +21,7 @@ web cache（web 缓存）
 
 
 
-3. nginx的优点：
+##### 3. nginx的优点：
 
 模块化、事件驱动、异步、非阻塞、多进程单线程
 
@@ -41,7 +41,7 @@ nginx 配合动态服务和Apache有区别。（FASTCGI 接口）
 
  
 
-4. nginx为什么抗高并发
+##### 4. nginx为什么抗高并发
 
 Nginx的高并发得益于其采用了epoll模型
 
@@ -49,7 +49,7 @@ nginx采用epoll模型，异步非阻塞。对于Nginx来说，把一个完整�
 
 
 
-5. 为什么nginx的总体性能比Apache高？
+##### 5. 为什么nginx的总体性能比Apache高？
 
 nginx使用最新的epoll和kqueue网络IO模型，而Apache使用传统的select模式。
 
@@ -57,7 +57,7 @@ nginx使用最新的epoll和kqueue网络IO模型，而Apache使用传统的selec
 
  
 
-6. nginx如何处理请求？
+##### 6. nginx如何处理请求？
 
 nginx在启动时会以daemon形式在后台运行，采用多进程+异步非阻塞IO事件模型来处理各种连接请求。多进程模型包括一个master进程，多个worker进程，一般worker进程个数是根据服务器CPU核数来决定的。master进程负责管理Nginx本身和其他worker进程
 
@@ -65,7 +65,9 @@ nginx在启动时会以daemon形式在后台运行，采用多进程+异步非�
 
 Master进程读取并验证配置文件nginx.conf；管理worker进程；而每一个Worker进程都维护一个线程（避免线程切换），处理连接和请求；注意Worker进程的个数由配置文件决定，一般和CPU个数相关（有利于进程切换），配置几个就有几个Worker进程。**worker进程中有一个ngx_worker_process_cycle()函数，执行无限循环**，不断处理收到的来自客户端的请求，并进行处理，那就要讲讲多进程模型的处理流程了。
 
-7. nginx多进程模式的处理流程
+
+
+##### 7. nginx多进程模式的处理流程
 
 首先，master进程一开始就会根据我们的配置，来建立需要listen的网络socket fd，然后fork出多个worker进程。
 
@@ -81,13 +83,13 @@ nginx还会将进程和cpu某一个核绑定，避免因为进程切换带来的
 
  
 
-8. 为什么要采用异步非阻塞？
+##### 8. 为什么要采用异步非阻塞？
 
 多进程模型+异步非阻塞模型才是胜出的方案。单纯的多进程模型会导致连接并发数量的降低，而采用异步非阻塞IO模型很好的解决了这个问题；并且还因此避免的多线程的上下文切换导致的性能损失。
 
  
 
-9. 如何避免所有的请求都被一个worker进程给竞争获取了
+##### 9. 如何避免所有的请求都被一个worker进程给竞争获取了
 
 Nginx采用了一个是否打开accept_mutex选项的值，ngx_accept_disabled标识控制一个worker进程是否需要去竞争获取accept_mutex选项，进而获取accept事件
 
@@ -96,7 +98,7 @@ ngx_accept_disabled值：nginx单进程的所有连接总数的八分之一，�
 
  
 
-10. nginx挂了怎么办？
+##### 10. nginx挂了怎么办？
 
 Keepalived+Nginx实现高可用，Keepalived是一个高可用解决方案，主要是用来防止服务器单点发生故障，可以通过和Nginx配合来实现Web服务的高可用。
 
@@ -106,6 +108,6 @@ Keepalived+Nginx实现高可用，Keepalived是一个高可用解决方案，主
 
  
 
-11. Nginx如何做到热部署？
+11. ##### Nginx如何做到热部署？
 
 修改配置文件nginx.conf后，重新生成新的worker进程，当然会以新的配置进行处理请求，而且新的请求必须都交给新的worker进程，至于老的worker进程，等把那些以前的请求处理完毕后，kill掉即可。
