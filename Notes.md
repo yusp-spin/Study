@@ -69,6 +69,7 @@ JAVA学习笔记/面经，将持续更新
 1. [Kafka入门](https://github.com/yusp-spin/Study/blob/main/Kafka%E5%85%A5%E9%97%A8.md)
 2. [Kafka介绍（二）](https://github.com/yusp-spin/Study/blob/main/Kafka%E4%BB%8B%E7%BB%8D%EF%BC%88%E4%BA%8C%EF%BC%89.md)
 3. [RocketMQ实现分布式事物原理](https://github.com/yusp-spin/Study/blob/main/RocketMQ%E5%AE%9E%E7%8E%B0%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1.md)
+4. [Kafka消费者消费消息(高级API)](https://github.com/yusp-spin/Study/blob/main/Kafka%E6%B6%88%E8%B4%B9%E8%80%85%E6%B6%88%E8%B4%B9%E6%B6%88%E6%81%AF(%E9%AB%98%E7%BA%A7API).md)
 
 
 
